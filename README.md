@@ -23,7 +23,7 @@ by J. Barhydt<sup>1</sup>
 - [III. Algorithm Implementation and Development](#algorithm-implementation-and-development)
 - [IV. Computational Results](#computational-results)
 
-Sec. I. \| **Introduction and Overview**
+# Sec. I. \| ** Introduction and Overview**
 ========================================
 
 A Yale database of faces was used to compile images of many individual's
