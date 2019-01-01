@@ -26,6 +26,7 @@ by J. Barhydt<sup>1</sup>
 - [APPENDIX A\| MATLAB Functions Used](#appendix-a)
 - [APPENDIX B\| MATLAB Code](#appendix-b)
 
+
 # Introduction and Overview
 ==================================
 
@@ -41,6 +42,7 @@ observe the evolution of low-rank approximations, the matrix is
 reconstructed piecemeal. Finally, a comparison is made between the
 cropped and uncropped images, and various faces are mapped onto the
 'face space' to allow for reconstruction.
+
 
 # Theoretical Background
 ==================================
@@ -115,6 +117,7 @@ approximation possible.
 > **Figure 2. Columns <img src="media/image12.png" width="13" height="11">
 > comprising of the eigenface matrix U**
 
+
 # Algorithm Implementation and Development
 =====================================================
 
@@ -139,6 +142,7 @@ combination of basis vectors needed to rebuild the image. Thus, summing
 over the multiplication of each value of the 'fingerprint' by its
 corresponding eigenface, up to the truncation level constituted the
 iterative reconstruction.
+
 
 # Computational Results
 =================================
@@ -264,6 +268,7 @@ varies widely photo-to-photo, often between +/- 10 to 100.
 > Raw Image, a Noisy Image, and a New Image (top, middle, bottom
 > respectively)**
 
+
 # Summary and Conclusions
 ==================================
 
@@ -283,6 +288,7 @@ shown that the process of cropping is essential to any program involving
 facial recognition or digital reconstruction, and the decomposition
 struggles to recreate images/data that aren't within the set and/or
 properly cropped.
+
 
 # APPENDIX A 
 (MATLAB Functions Used / Description With Example)
@@ -375,6 +381,7 @@ zeros(im\_height\*im\_width,3);
 
 -   builds a matrix of zeros, in this case the length of a vectorized
     image and width 3 for each image in figure 8
+
 
 # APPENDIX B 
 (MATLAB Code)
