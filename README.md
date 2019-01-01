@@ -37,26 +37,19 @@ Sec. II. \| Theoretical Background
 
 The SVD produces two orthogonal, unitary basis sets which represent the
 deconstruction of a matrix A, given by the SVD equation
-[![](media/image6.png){width="0.7361111111111112in"
-height="0.1111111111111111in"}](about:blank). In our case A is given by
+<img src="media/image6.png" width="73" height="11">. 
+In our case A is given by
 vectorizing all images, so each column is a new image, thus A contains
 all images. The basis vectors can be understood by their construction
 and how they affect the matrix A. For instance,
-[![](media/image25.png){width="0.1111111111111111in"
-height="0.1111111111111111in"}](about:blank) being acted upon by
-[![](media/image17.png){width="0.1111111111111111in"
-height="0.1111111111111111in"}](about:blank) can be shown as a new
-product [![](media/image19.png){width="0.5555555555555556in"
-height="0.1111111111111111in"}](about:blank)**.** Since the covariance
+<img src="media/image25.png" width="11" height="11"> being acted upon by
+<img src="media/image17.png" width="11" height="11"> can be shown as a new
+<img src="media/image19.png" width="55" height="11">**.** Since the covariance
 matrix, up to a scalar normalizing constant, of
-[![](media/image1.png){width="0.1111111111111111in"
-height="9.722222222222222e-2in"}](about:blank) is given by
-[![](media/image22.png){width="0.3333333333333333in"
-height="0.125in"}](about:blank), we have
-[![](media/image20.png){width="2.1805555555555554in"
-height="0.16666666666666666in"}](about:blank). Where
-[![](media/image15.png){width="1.6388888888888888in"
-height="0.16666666666666666in"}](about:blank)**.** Since
+<img src="media/image1.png" width="11" height="9"> is given by
+<img src="media/image22.png" width="33" height="13">, we have
+<img src="media/image20.png" width="218" height="17">. Where
+<img src="media/image15.png" width="163" height="17">**.** Since
 [![](media/image29.png){width="0.1111111111111111in"
 height="0.1111111111111111in"}](about:blank) and
 [![](media/image28.png){width="0.1111111111111111in"
