@@ -50,35 +50,27 @@ matrix, up to a scalar normalizing constant, of
 <img src="media/image22.png" width="33" height="13">, we have
 <img src="media/image20.png" width="218" height="17">. Where
 <img src="media/image15.png" width="163" height="17">**.** Since
-[![](media/image29.png){width="0.1111111111111111in"
-height="0.1111111111111111in"}](about:blank) and
-[![](media/image28.png){width="0.1111111111111111in"
-height="0.1111111111111111in"}](about:blank) are both unitary operators,
+<img src="media/image29.png" width="11" height="11"> and
+<img src="media/image28.png" width="11" height="11"> are both unitary operators,
 they carry the property that their inverse and transpose are equal.
 Putting everything together yields
-[![](media/image10.png){width="2.138888888888889in"
-height="0.125in"}](about:blank) .
+<img src="media/image10.png" width="214" height="13">
+ .
 
-Therefore, [![](media/image8.png){width="0.1111111111111111in"
-height="0.1111111111111111in"}](about:blank) is an operator that
-diagonalizes [![](media/image11.png){width="0.3194444444444444in"
-height="0.125in"}](about:blank), because
-[![](media/image3.png){width="8.333333333333333e-2in"
-height="9.722222222222222e-2in"}](about:blank) is a diagonal matrix.
+Therefore, <img src="media/image8.png" width="11" height="11"> is an operator that
+diagonalizes <img src="media/image11.png" width="32" height="13">, because
+<img src="media/image3.png" width="8" height="9">
+ is a diagonal matrix.
 This is important given an understanding of
-[![](media/image11.png){width="0.3194444444444444in"
-height="0.125in"}](about:blank). In figure 1, a representation of this
+<img src="media/image11.png" width="32" height="13">. In figure 1, a representation of this
 product is shown. As each column of a is multiplied by itself and all
 combinations of columns, this product represents a covariance matrix,
 where the diagonal values represent the internal variance of each photo,
 while the off-diagonals represent how each photo is *different*. By
-diagonalizing [![](media/image11.png){width="0.3194444444444444in"
-height="0.125in"}](about:blank), we build a matrix with orthogonal
+diagonalizing <img src="media/image11.png" width="32" height="13">, we build a matrix with orthogonal
 vectors, with no covariance between them, and the vectors in
-[![](media/image14.png){width="0.1111111111111111in"
-height="0.1111111111111111in"}](about:blank) become an orthonormal basis
-for [![](media/image26.png){width="0.19444444444444445in"
-height="0.125in"}](about:blank).
+<img src="media/image14.png" width="11" height="11"> become an orthonormal basis
+for <img src="media/image26.png" width="19" height="13">.
 
 By the same logic, **U** diagonalizes **A**. This is where the primary
 utility of the SVD process comes into play, as **U** forms an
@@ -86,33 +78,26 @@ orthonormal basis, comprised of eigenfaces organized in order of
 decreasing prominence, shown as figure 2. These eigenfaces make up the
 primary structure underlying all the faces, and is valuable in the
 reconstruction. The matrix
-[![](media/image24.png){width="8.333333333333333e-2in"
-height="9.722222222222222e-2in"}](about:blank) thusly gives respective
+<img src="media/image24.png" width="8" height="9"> thusly gives respective
 weights to each of the underlying eigenfaces, in descending order. By
 construction, a rank k approximation of A can then be built by
 truncating these three matrices and summing over the remaining vector
 components, shown by the following equation
-[![](media/image4.png){width="1.2222222222222223in"
-height="0.20833333333333334in"}](about:blank). Furthermore, the L2 norm
+<img src="media/image4.png" width="122" height="21">. Furthermore, the L2 norm
 of of the difference between A and
-[![](media/image27.png){width="0.16666666666666666in"
-height="0.125in"}](about:blank) equals the squared singular values,
+<img src="media/image27.png" width="17" height="13"> equals the squared singular values,
 added in quadrature. Therefore, it follows that the SVD is a
 least-squares method of reconstruction and will yield the best rank k
 approximation possible.
 
-![](media/image32.png){width="2.5781255468066493in"
-height="1.4322922134733158in"}
-![](media/image33.png){width="1.3333333333333333in"
-height="2.2857141294838144in"}
+<img src="media/image32.png" width="257" height="143">
+<img src="media/image33.png" width="133" height="229">
 
 > **Figure 1. Simplified representation Figure 2. Columns**
-> [![](media/image12.png){width="0.125in"
-> height="0.1111111111111111in"}](about:blank) **comprising **
+> <img src="media/image12.png" width="13" height="11"> **comprising **
 >
 > **of the covariance matrix**
-> [![](media/image11.png){width="0.3194444444444444in"
-> height="0.125in"}](about:blank) **the eigenface matrix U **
+> <img src="media/image11.png" width="32" height="13"> **the eigenface matrix U **
 
 Sec. III. \| Algorithm Implementation and Development
 =====================================================
