@@ -22,8 +22,12 @@ by J. Barhydt<sup>1</sup>
 - [Sec.  II. \| Theoretical Background](#theoretical-background)
 - [Sec. III. \| Algorithm Implementation and Development](#algorithm-implementation-and-development)
 - [Sec.  IV. \| Computational Results](#computational-results)
+- [Sec.   V. \| Summary and Conclusion](#summary-and-conclusion)
+- [APPENDIX A\| MATLAB Functions Used](#appendix-a)
+- [APPENDIX B\| MATLAB Code](#appendix-b)
 
 # Introduction and Overview
+==================================
 
 A Yale database of faces was used to compile images of many individual's
 faces. There are two datasets overall: one set is cropped so the faces
@@ -38,7 +42,7 @@ reconstructed piecemeal. Finally, a comparison is made between the
 cropped and uncropped images, and various faces are mapped onto the
 'face space' to allow for reconstruction.
 
-Sec. II. \| Theoretical Background
+# Theoretical Background
 ==================================
 
 The SVD produces two orthogonal, unitary basis sets which represent the
@@ -111,7 +115,7 @@ approximation possible.
 > **Figure 2. Columns <img src="media/image12.png" width="13" height="11">
 > comprising of the eigenface matrix U**
 
-Sec. III. \| Algorithm Implementation and Development
+# Algorithm Implementation and Development
 =====================================================
 
 In order to work easily with each photo, a scalar multiplier was used to
@@ -136,7 +140,7 @@ over the multiplication of each value of the 'fingerprint' by its
 corresponding eigenface, up to the truncation level constituted the
 iterative reconstruction.
 
-Sec. IV. \| Computational Results
+# Computational Results
 =================================
 
 There were five parts to the computational results, shown below.
@@ -260,7 +264,7 @@ varies widely photo-to-photo, often between +/- 10 to 100.
 > Raw Image, a Noisy Image, and a New Image (top, middle, bottom
 > respectively)**
 
-Sec. V. \| Summary and Conclusions
+# Summary and Conclusions
 ==================================
 
 SVD allows for great reduction in dimensionality, as demonstrated by the
@@ -280,7 +284,7 @@ facial recognition or digital reconstruction, and the decomposition
 struggles to recreate images/data that aren't within the set and/or
 properly cropped.
 
-APPENDIX A (MATLAB Functions Used / Description With Example)
+# APPENDIX A (MATLAB Functions Used / Description With Example)
 =============================================================
 
 dir( \'CroppedYale/\*/\*.pgm\' );
@@ -371,7 +375,7 @@ zeros(im\_height\*im\_width,3);
 -   builds a matrix of zeros, in this case the length of a vectorized
     image and width 3 for each image in figure 8
 
-APPENDIX B (MATLAB Code)
+# APPENDIX B (MATLAB Code)
 ========================
 
 \% SVD Basis Faces: Spectrum Analysis, Projection, and Reconstruction
