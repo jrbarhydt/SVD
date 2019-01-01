@@ -18,6 +18,10 @@ by J. Barhydt<sup>1</sup>
 
 <sub>1- This report uses Extended Yale Faces B Database: http://vision.ucsd.edu/~iskwak/ExtYaleDatabase/ExtYaleB.html</sub>
 
+- [I. Introduction and Overview](#Introduction-and-Overview)
+- [II. Theoretical Background](#Theoretical-background)
+- [III. Algorithm Implementation and Development](#Algorithm-Implementation and Development)
+
 Sec. I. \| **Introduction and Overview**
 ========================================
 
