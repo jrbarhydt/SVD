@@ -1,6 +1,12 @@
-J. Barhydt[^1]
+**Facial Reconstruction in MATLAB
+Using Singular Value Decomposition (SVD)**
+========================================
+
+by J. Barhydt<sup>1</sup>
 
 *University of Washington, Seattle, WA, 98195*
+
+> **Overview:**
 
 > **Singular Value Decomposition (SVD) is a useful computational tool
 > for reducing the dimensionality of an overdetermined system. It has
@@ -13,9 +19,7 @@ J. Barhydt[^1]
 Sec. I. \| **Introduction and Overview**
 ========================================
 
-A
-
-Yale database of faces was used to compile images of many individual's
+A Yale database of faces was used to compile images of many individual's
 faces. There are two datasets overall: one set is cropped so the faces
 are well-aligned, while the other is uncropped. Once the SVD is
 performed, a number of computations and analyses are performed. First, a
@@ -299,8 +303,8 @@ APPENDIX A (MATLAB Functions Used / Description With Example)
 dir( \'CroppedYale/\*/\*.pgm\' );
 
 -   collects information about a file directory, including file/folder
-    > name. Date and image size is included, though not used in this
-    > code.
+    name. Date and image size is included, though not used in this
+    code.
 
 figure(4)
 
@@ -309,32 +313,32 @@ figure(4)
 im2double( imresize( image, \[im\_height im\_width\]));
 
 -   grabs an image (which must be named/located) and resizes it, then
-    > turns it into matrix form
+    turns it into matrix form
 
 imshow( mat2gray( reshape( image(:,i),\[im\_height im\_width\])))
 
 -   grabs an image that has been vectorized, resizes it and displays it
-    > as a grayscale image
+    as a grayscale image
 
 legend(cutoff,\[\'Truncation Cutoff at %\',num2str(100\*tol)\])
 
 -   shows legend on plot, using previously-defined variable as a string
-    > input
+    input
 
 length( files )
 
 -   returns the length of an object, such as files, which used the dir()
-    > function above
+    function above
 
 plot(ax1,1:data\_size,sing\_values(trunc)\*ones(data\_size,1));
 
 -   standard plot function, with subplot ax1 specified, creating an
-    > x-axis based on integers from 1 to end
+    x-axis based on integers from 1 to end
 
 0.4\*randn(im\_height\*im\_width,1)
 
 -   creates a random matrix, the size of an image, in this case with 40%
-    > the peak matrix value
+    the peak matrix value
 
 reshape(sprintf(\'%5.0f%%\',0:10:100),6,\[\]).\';
 
@@ -343,22 +347,22 @@ reshape(sprintf(\'%5.0f%%\',0:10:100),6,\[\]).\';
 semilogy(ax1, sing\_values, \'r.\'), xlim(\[0 data\_size\])
 
 -   log plot of singular values on the ax1 subplot, restricting the x
-    > axis to end at the end of the data
+    axis to end at the end of the data
 
 set(gca,\'yticklabel\',labels)
 
 -   gca stands for 'get current axis' and here that axis is set to
-    > change the y-axis tickmarks
+    change the y-axis tickmarks
 
 subplot(2,1,1);
 
 -   plots multiple objects onto a figure in an n by m grid, following
-    > subplot(n,m,i) where i is the ith object
+    subplot(n,m,i) where i is the ith object
 
 sum(sing\_values);
 
 -   perform a standard summation of values in a vector of singular
-    > values, used for normalization constant
+    values, used for normalization constant
 
 \[u,s,v\] = svd(A,\'econ\');
 
@@ -372,26 +376,27 @@ xlabel(\[\'Number of Basis Face Vectors Used (out of
 \',num2str(data\_size),\')\'\])
 
 -   adds a label to the x-axis, here using a variable to string function
-    > as before
+    as before
 
 ylabel(ax1, {\'\$log\[s\_{jj}\]\$\'},\'Interpreter\',\'latex\')
 
 -   same as above, with the y-axis, however the latex interpreter is
-    > used to convert to symbols from formatting
+    used to convert to symbols from formatting
 
 zeros(im\_height\*im\_width,3);
 
 -   builds a matrix of zeros, in this case the length of a vectorized
-    > image and width 3 for each image in figure 8
+    image and width 3 for each image in figure 8
 
 APPENDIX B (MATLAB Code)
 ========================
 
 \% SVD Basis Faces: Spectrum Analysis, Projection, and Reconstruction
-
 \% Johnathon R Barhydt
-
-\% AMATH 482 HW1
+\%
+\% Yale Face Files Located at:
+\% http://vision.ucsd.edu/~iskwak/ExtYaleDatabase/ExtYaleB.html
+\% 
 
 clear all, close all, clc
 
