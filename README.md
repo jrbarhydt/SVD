@@ -102,9 +102,8 @@ approximation possible.
 > <img src="media/image33.png" width="133" height="229">
 
 
-> **Figure 2. Columns 
-> <img src="media/image12.png" width="13" height="11"> 
-> comprising of the eigenface matrix U **
+> **Figure 2. Columns <img src="media/image12.png" width="13" height="11">
+> comprising of the eigenface matrix U**
 
 Sec. III. \| Algorithm Implementation and Development
 =====================================================
@@ -140,8 +139,7 @@ SVD Spectrum - Cropped/Uncropped
 --------------------------------
 
 Plotting the diagonals of the
-[![](media/image9.png){width="8.333333333333333e-2in"
-height="9.722222222222222e-2in"}](about:blank) matrix gave a spectrum of
+<img src="media/image9.png" width="8" height="9"> matrix gave a spectrum of
 the 'strength' of each basis mode. This spectrum is shown for both the
 cropped and uncropped sets on the top of figures 3 and 4, respectively.
 Additionally, the truncation cutoff line is shown for both sets. The
@@ -149,19 +147,17 @@ uncropped set shows its main weakness right there. The uncropped set
 doesn't reach its truncation point until nearly the entire set has been
 used.
 
-![](media/image5.png){width="4.734375546806649in"
-height="3.605074365704287in"}
+<img src="media/image5.png" width="473" height="360">
 
-**Figure 3. SVD Spectrum for Cropped Photos **
+> **Figure 3. SVD Spectrum for Cropped Photos
+>
+> (log plot above with truncation, normalized spectrum below)**
 
-**(log plot above with truncation, normalized spectrum below)**
+<img src="media/image16.png" width="473" height="360">
 
-![](media/image16.png){width="4.734375546806649in"
-height="3.605074365704287in"}
-
-**Figure 4. SVD Spectrum for Uncropped Photos **
-
-**(log plot above with truncation, normalized spectrum below)**
+> **Figure 4. SVD Spectrum for Uncropped Photos
+>
+> (log plot above with truncation, normalized spectrum below)**
 
 Furthermore, a comparison is shown between the most dominant singular
 values, properly normalized to show relative weighted strengths. One of
@@ -185,12 +181,11 @@ modern art; it is difficult to make out any structure as the faces seem
 very blurry. Also, in the cropped set, it is interesting how the most
 dominant face appears quite androgynous.
 
-![](media/image21.png){width="6.5in" height="1.2083333333333333in"}
+<img src="media/image21.png" width="650" height="120"> 
 
-![](media/image30.png){width="6.4936297025371825in"
-height="1.359375546806649in"}
+<img src="media/image30.png" width="650" height="136"> 
 
-> **Figure 5. Mixer/Splitter Circuit ((add reference/description))**
+> **Figure 5. Highest ranked basis faces for each (un/cropped) dataset**
 
 Reconstruction Percent - Cropped/Uncropped
 ------------------------------------------
