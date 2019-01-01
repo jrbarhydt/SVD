@@ -22,7 +22,7 @@ by J. Barhydt<sup>1</sup>
 - [Sec.  II. \| Theoretical Background](#theoretical-background)
 - [Sec. III. \| Algorithm Implementation and Development](#algorithm-implementation-and-development)
 - [Sec.  IV. \| Computational Results](#computational-results)
-- [Sec.   V. \| Summary and Conclusion](#summary-and-conclusion)
+- [Sec.   V. \| Summary and Conclusion](#summary-and-conclusions)
 - [APPENDIX A\| MATLAB Functions Used](#appendix-a)
 - [APPENDIX B\| MATLAB Code](#appendix-b)
 
@@ -284,7 +284,8 @@ facial recognition or digital reconstruction, and the decomposition
 struggles to recreate images/data that aren't within the set and/or
 properly cropped.
 
-# APPENDIX A (MATLAB Functions Used / Description With Example)
+# APPENDIX A 
+(MATLAB Functions Used / Description With Example)
 =============================================================
 
 dir( \'CroppedYale/\*/\*.pgm\' );
@@ -375,7 +376,8 @@ zeros(im\_height\*im\_width,3);
 -   builds a matrix of zeros, in this case the length of a vectorized
     image and width 3 for each image in figure 8
 
-# APPENDIX B (MATLAB Code)
+# APPENDIX B 
+(MATLAB Code)
 ========================
 
 \% SVD Basis Faces: Spectrum Analysis, Projection, and Reconstruction
