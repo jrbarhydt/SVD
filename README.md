@@ -16,6 +16,8 @@ by J. Barhydt<sup>1</sup>
 > paper, the method is used to deconstruct a database of faces, allowing
 > low-rank approximation to reconstruct the images.**
 
+<sub>1- This report uses Extended Yale Faces B Database: http://vision.ucsd.edu/~iskwak/ExtYaleDatabase/ExtYaleB.html</sub>
+
 Sec. I. \| **Introduction and Overview**
 ========================================
 
@@ -210,7 +212,7 @@ Reconstruction as a Function of Rank
 ------------------------------------
 
 
-> <img src="media/image31.png" width="357" height="454">
+> <img src="media/image31.png" width="450" height="600">
 
 > **Figure 8. Reconstruction Results for a Range of Rank K
 > Approximations**
@@ -248,13 +250,11 @@ fingerprints are shown without axis values; this was more of a visual
 preference, though the domain spans 0 to truncation index, and the range
 varies widely photo-to-photo, often between +/- 10 to 100.
 
-![](media/image7.png){width="3.3333333333333335in"
-height="3.8446970691163607in"}
+> <img src="media/image7.png">
 
-**Figure 9. Original Image , Fingerprint, and Reconstruction of a **
-
-**Raw Image, a Noisy Image, and a New Image (top, middle, bottom
-respectively)**
+> **Figure 9. Original Image , Fingerprint, and Reconstruction of a
+> Raw Image, a Noisy Image, and a New Image (top, middle, bottom
+> respectively)**
 
 Sec. V. \| Summary and Conclusions
 ==================================
@@ -371,10 +371,15 @@ APPENDIX B (MATLAB Code)
 ========================
 
 \% SVD Basis Faces: Spectrum Analysis, Projection, and Reconstruction
+
 \% Johnathon R Barhydt
+
 \%
+
 \% Yale Face Files Located at:
+
 \% http://vision.ucsd.edu/~iskwak/ExtYaleDatabase/ExtYaleB.html
+
 \% 
 
 clear all, close all, clc
@@ -599,4 +604,4 @@ imshow( mat2gray( reshape( X(:,i),\[im\_height im\_width\])))
 
 end
 
-[^1]: This report uses Extended Yale Faces B Database
+<sup>1: This report uses Extended Yale Faces B Database http://vision.ucsd.edu/~iskwak/ExtYaleDatabase/ExtYaleB.html</sup>
