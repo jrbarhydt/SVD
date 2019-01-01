@@ -147,16 +147,14 @@ uncropped set shows its main weakness right there. The uncropped set
 doesn't reach its truncation point until nearly the entire set has been
 used.
 
-<img src="media/image5.png" width="473" height="360">
+> <img src="media/image5.png" width="473" height="360">
 
 > **Figure 3. SVD Spectrum for Cropped Photos
->
 > (log plot above with truncation, normalized spectrum below)**
 
-<img src="media/image16.png" width="473" height="360">
+> <img src="media/image16.png" width="473" height="360">
 
 > **Figure 4. SVD Spectrum for Uncropped Photos
->
 > (log plot above with truncation, normalized spectrum below)**
 
 Furthermore, a comparison is shown between the most dominant singular
@@ -181,9 +179,9 @@ modern art; it is difficult to make out any structure as the faces seem
 very blurry. Also, in the cropped set, it is interesting how the most
 dominant face appears quite androgynous.
 
-<img src="media/image21.png" width="650" height="120"> 
+> <img src="media/image21.png" width="650" height="120"> 
 
-<img src="media/image30.png" width="650" height="136"> 
+> <img src="media/image30.png" width="650" height="136"> 
 
 > **Figure 5. Highest ranked basis faces for each (un/cropped) dataset**
 
@@ -198,23 +196,24 @@ uncropped set starts off better, at nearly 30% compared to 12%, however
 the cropped set has a much sharper increase and after an eighth of the
 modes are considered beats the uncropped set by almost 15%.
 
-![](media/image23.png){width="2.7708333333333335in"
-height="2.1931310148731407in"}
-![](media/image2.png){width="2.8020833333333335in"
-height="2.211606517935258in"}
+> <img src="media/image23.png" width="277" height="219">
 
-> **Figure 6. Percent approximation Figure 7. Percent approximation**
->
-> **vs. rank - Cropped vs. rank - Uncropped**
+> **Figure 6. Percent approximation
+> vs. rank - Cropped**
+
+> <img src="media/image2.png" width="280" height="221"> 
+
+> **Figure 7. Percent approximation
+> vs. rank - Uncropped**
 
 Reconstruction as a Function of Rank
 ------------------------------------
 
-![](media/image31.png){width="3.5729166666666665in"
-height="4.536663385826771in"}
 
-**Figure 8. Reconstruction Results for a Range of Rank K
-Approximations**
+> <img src="media/image31.png" width="357" height="454">
+
+> **Figure 8. Reconstruction Results for a Range of Rank K
+> Approximations**
 
 By performing the partial sum, discussed in Section II, a range of
 low-rank approximations show the evolution of reconstructing a face,
