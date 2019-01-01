@@ -90,18 +90,21 @@ added in quadrature. Therefore, it follows that the SVD is a
 least-squares method of reconstruction and will yield the best rank k
 approximation possible.
 
-<img src="media/image32.png" width="257" height="143">
+> <img src="media/image32.png" width="257" height="143">
+
+
 > **Figure 1. Simplified representation
-> of the covariance matrix** <img src="media/image11.png" width="32" height="13">
+> of the covariance matrix
+> <img src="media/image11.png" width="32" height="13">**
 
 
-<img src="media/image33.png" width="133" height="229">
 
-> **Figure 1. Simplified representation Figure 2. Columns**
-> <img src="media/image12.png" width="13" height="11"> **comprising **
->
-> **of the covariance matrix**
-> <img src="media/image11.png" width="32" height="13"> **the eigenface matrix U **
+> <img src="media/image33.png" width="133" height="229">
+
+
+> **Figure 2. Columns 
+> <img src="media/image12.png" width="13" height="11"> 
+> comprising of the eigenface matrix U **
 
 Sec. III. \| Algorithm Implementation and Development
 =====================================================
