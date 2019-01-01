@@ -18,13 +18,12 @@ by J. Barhydt<sup>1</sup>
 
 <sub>1- This report uses Extended Yale Faces B Database: http://vision.ucsd.edu/~iskwak/ExtYaleDatabase/ExtYaleB.html</sub>
 
-- [I. Introduction and Overview](#introduction-and-overview)
+- [I. Introduction and Overview](#sec.-i.-\|-introduction-and-overview)
 - [II. Theoretical Background](#theoretical-background)
 - [III. Algorithm Implementation and Development](#algorithm-implementation-and-development)
 - [IV. Computational Results](#computational-results)
 
-# Sec. I. \| ** Introduction and Overview**
-========================================
+# Sec. I. \| Introduction and Overview
 
 A Yale database of faces was used to compile images of many individual's
 faces. There are two datasets overall: one set is cropped so the faces
