@@ -157,12 +157,12 @@ uncropped set shows its main weakness right there. The uncropped set
 doesn't reach its truncation point until nearly the entire set has been
 used.
 
->>> <img src="media/image5.png" width="473" height="360">
+> <img src="media/image5.png" width="473" height="360">
 
 > **Figure 3. SVD Spectrum for Cropped Photos
 > (log plot above with truncation, normalized spectrum below)**
 
->>> <img src="media/image16.png" width="473" height="360">
+> <img src="media/image16.png" width="473" height="360">
 
 > **Figure 4. SVD Spectrum for Uncropped Photos
 > (log plot above with truncation, normalized spectrum below)**
